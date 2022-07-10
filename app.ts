@@ -8,3 +8,11 @@ function printResult (num: number):void {
 }
 
 printResult(addd(5,12));
+
+
+let combineValues: (a:number, b:number) => number;
+
+combineValues = addd;
+// combineValues = printResult;
+
+console.log(combineValues(8,8));
